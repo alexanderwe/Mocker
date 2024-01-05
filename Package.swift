@@ -15,7 +15,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Mocker"
+            name: "Mocker",
+            linkerSettings: [.linkedFramework("XCTest")]
         ),
         .testTarget(
             name: "MockerTests",
